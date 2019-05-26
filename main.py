@@ -15,6 +15,8 @@ if __name__ == '__main__':
         else:
             break
     print()
+    
+    os.system('cls')
 
     print('Step 2:')
     while True:
