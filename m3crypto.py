@@ -1,4 +1,5 @@
 import aes128
+import os
 
 def check_key(key):
     if len(key) > 16:
@@ -105,7 +106,7 @@ def decrypt(key, data = '', filename = None):
                 decrypted_data.pop()
 
     if filename:
-        out_path = os.path.join(os.path.dirname(input_path) , 'decrypted_' + os.path.basename(input_path))
+        out_path = os.path.join(os.path.dirname(filename) , 'decrypted_' + os.path.basename(filename))
 
         # Ounput data
         with open(out_path, 'xb') as ff:

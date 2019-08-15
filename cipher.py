@@ -1,13 +1,13 @@
 import os
 import time
 
-import m3crypto
+from m3crypto import encrypt, decrypt
 
 def cls():
     # os.system('clear') # LINUX
     os.system('cls') # WINDOWS
 
-def main():
+if __name__ == '__main__':
     # WAY
 
     print('Step 1:')
@@ -86,7 +86,7 @@ def main():
 
     if tp == 3:
         print("In working")
-        return
+        exit(0)
 
     print('\r\nPlease, wait...')
 
@@ -107,5 +107,3 @@ def main():
     print('If smth wrong check the key you entered')
     print('Press enter to exit')
     a = input()
-
-main()
